@@ -1,0 +1,13 @@
+.header_wrapper {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  //background-color: transparent;
+  border-bottom: none;
+  background-color: #f5e1f5;
+
+  a {
+    margin: 1vh auto;
+  }
+}
