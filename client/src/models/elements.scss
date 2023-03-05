@@ -1,0 +1,89 @@
+$mainBackgroundColor: #e3e3e3;
+$mainTextColor: rgba(10,37,64,0.7);
+$mainFocusColor: #226eff;
+
+$mainButtonColor: rgb(0,112,240);
+$mainButtonHoverColor: #1359d0;
+
+$lightTextColor: rgb(255,255,255);
+$borderWrapperColor: #d7d7d7;
+
+
+input.class_input {
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+  border: 2px solid $mainBackgroundColor;
+  border-radius: 5px;
+  transition: .1s ease-in-out;
+  font-size: 15px;
+  box-sizing: border-box;
+
+  &:focus, &:-webkit-autofill, &:-webkit-autofill:focus {
+    background-color: #fff !important;
+    border: 2px solid $mainFocusColor;
+  }
+}
+
+button.class_button {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: $mainButtonColor;
+  transition: .1s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  color: $lightTextColor;
+
+  &:hover {
+    background-color: $mainButtonHoverColor;
+  }
+}
+
+div.class_form_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: $borderWrapperColor 0px 0px 10px .5px;
+  padding: 30px 15px;
+}
+
+div.class_window_wrapper {
+  min-width: 280px;
+  max-width: 460px;
+  margin: 0 auto;
+  width: calc(100% - 16px * 2);
+  box-sizing: border-box;
+  font-family: "Roboto Light", sans-serif;
+}
+
+h2.class_form_header {
+  margin-top: 0;
+  padding-bottom: 3vh;
+  border-bottom: 1px solid $borderWrapperColor;
+}
+
+div.class_element_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  label, input {
+    //margin-bottom: 1vh;
+  }
+
+  label {
+    color: $mainTextColor;
+    //margin-left: 25px;
+    margin-bottom: 1vh;
+  }
+}
+
+.redirect_link {
+  color: $mainButtonColor;
+  cursor: pointer;
+}
